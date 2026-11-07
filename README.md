@@ -32,5 +32,14 @@
 
 ## Result
 
-![Gambar halaman chekout](screenshot/ss5.png)
+![Gambar halaman Stok](screenshot/ss5.png)
+
+### Membuat halaman Checkout
+
+1. Menampilkan data pemesan
+2. Menampilkan informasi data buku dan pemesan serta total harga pesanan
+
+![Halaman Checkout](screenshot/ss6.png)
+
+![Informasi pemesan dantotal harga](screenshot/ss7.png)
 

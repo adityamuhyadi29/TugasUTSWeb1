@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Pemesanan</title>
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+
+    <header>
+        <h2>Pemesanan Buku</h2>
+        <button onclick="bukaHalaman('dashboard.html')">
+            Kembali
+        </button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Katalog Buku</h2>
+            <div id="daftarBuku">
+                <!-- Katalog ditampilkan menggunakan JavaScript -->
+            </div>
+        </section>
+
+        <section>
+            <h2>Keranjang Pemesanan</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>Nama Buku</th>
+                        <th>Harga</th>
+                        <th>Jumlah</th>
+                        <th>Subtotal</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="keranjang">
+                    <!-- Pesanan ditampilkan menggunakan JavaScript -->
+                </tbody>
+            </table>
+
+            <h3 id="totalHarga">Total: Rp 0</h3>
+        </section>
+
+        <section>
+            <h2>Informasi Pemesan</h2>
+
+            <form id="formPemesanan">
+                <label>Nama Pemesan</label>
+                <input type="text" id="namaPemesan" required>
+
+                <label>Email</label>
+                <input type="email" id="emailPemesan" required>
+
+                <label>Nomor Telepon</label>
+                <input type="tel" id="teleponPemesan" required>
+
+                <label>Alamat Pengiriman</label>
+                <textarea id="alamatPemesan" required></textarea>
+
+                <label>Metode Pembayaran</label>
+                <select id="metodePembayaran" required>
+                    <option value="">Pilih Pembayaran</option>
+                    <option value="Transfer Bank">Transfer Bank</option>
+                    <option value="E-Wallet">E-Wallet</option>
+                    <option value="COD">COD</option>
+                </select>
+
+                <button type="submit">Buat Pesanan</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -29,7 +29,7 @@ var dataKatalogBuku = [
         jenisBarang: "Buku Ajar",
         edisi: "2",
         stok: 548,
-        harga: "Rp 180.000",
+        harga: 180000,
         cover: "img/pengantar_komunikasi.jpg"
     },
     {
@@ -38,7 +38,7 @@ var dataKatalogBuku = [
         jenisBarang: "Buku Ajar",
         edisi: "3",
         stok: 392,
-        harga: "Rp 220.000",
+        harga: 220000,
         cover: "img/manajemen_keuangan.jpg"
     },
     {
@@ -47,7 +47,7 @@ var dataKatalogBuku = [
         jenisBarang: "Buku Ajar",
         edisi: "1",
         stok: 278,
-        harga: "Rp 150.000",
+        harga: 150000,
         cover: "img/kepemimpinan.jpg"
     },
     {
@@ -56,7 +56,7 @@ var dataKatalogBuku = [
         jenisBarang: "Buku Ajar",
         edisi: "2",
         stok: 165,
-        harga: "Rp 200.000",
+        harga: 200000,
         cover: "img/mikrobiologi.jpg"
     },
     {
@@ -65,8 +65,8 @@ var dataKatalogBuku = [
         jenisBarang: "Buku Ajar",
         edisi: "4",
         stok: 204,
-        harga: "Rp 250.000",
-        cover: "img/paud_perkembangan.jpeg"
+        harga: 250000,
+        cover: "img/paud_perkembangan.jpg"
     }
 ]
 
