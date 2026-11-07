@@ -1,0 +1,43 @@
+
+/* Pengaturan Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Website */
+body {
+    position: relative;
+    background: #f5f6fa;
+    min-height: 100vh;
+}
+
+/* Watermark Logo */
+body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 400px;
+    height: 400px;
+
+    background-image: url("/assets/Logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    opacity: 0.50;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Konten di atas watermark */
+main, header, nav, footer,
+.login-box, .modal {
+    position: relative;
+    z-index: 1;
+}
