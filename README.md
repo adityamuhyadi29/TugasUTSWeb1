@@ -25,3 +25,12 @@
 
 ![Gambar tampilan dashboard](screenshot/ss4.png)
 
+### Halaman cekout
+
+1. Menampilkan semua data buku yang berada di data.js
+2. Fitur untuk menambahkan stok buku baru dengan DOM
+
+## Result
+
+![Gambar halaman chekout](screenshot/ss5.png)
+

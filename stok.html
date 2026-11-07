@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Stok / Katalog</title>
+    <link rel="stylesheet" href="css/stok.css">
+</head>
+<body>
+
+    <header>
+        <h2>Informasi Stok / Katalog Buku</h2>
+        <button onclick="bukaHalaman('dashboard.html')">
+            Kembali
+        </button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Tambah Stok Buku</h2>
+
+            <form id="formKatalog">
+                <input type="text" id="kodeBarang"
+                    placeholder="Kode Barang" required>
+
+                <input type="text" id="namaBarang"
+                    placeholder="Nama Barang" required>
+
+                <input type="text" id="jenisBarang"
+                    placeholder="Jenis Barang" required>
+
+                <input type="text" id="edisi"
+                    placeholder="Edisi" required>
+
+                <input type="number" id="stok"
+                    placeholder="Jumlah Stok" min="0" required>
+
+                <input type="text" id="harga"
+                    placeholder="Harga (contoh: Rp 180.000)" required>
+
+                <input type="text" id="cover"
+                    placeholder="Lokasi gambar cover">
+
+                <button type="submit">Tambah Buku</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Daftar Katalog Buku</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Kode Barang</th>
+                        <th>Nama Barang</th>
+                        <th>Jenis Barang</th>
+                        <th>Edisi</th>
+                        <th>Stok</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+
+                <tbody id="daftarKatalog">
+                    <!-- Data ditampilkan melalui JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
