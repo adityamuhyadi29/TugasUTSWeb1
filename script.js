@@ -30,7 +30,7 @@ if (formLogin) {
                 JSON.stringify(pengguna)
             );
 
-            alert("Login berhasil! Selamat datang " + pengguna.nama);
+            window.location.href = "dashboard.html";
 
             // Mengarahkan berdasarkan role
             if (pengguna.role === "Admin") {
