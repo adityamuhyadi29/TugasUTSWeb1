@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard Menu</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <header>
+        <h2>Dashboard</h2>
+
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <main>
+
+        <!-- Greeting -->
+        <section>
+            <h1 id="greeting">Selamat Datang!</h1>
+            <p id="namaPengguna">Pengguna</p>
+            <p>Selamat beraktivitas dan semoga harimu menyenangkan.</p>
+        </section>
+
+        <!-- Menu Utama -->
+        <section>
+            <h2>Menu Utama</h2>
+
+            <div>
+
+                <button onclick="bukaHalaman('stok.html')">
+                    Informasi Stok / Katalog
+                </button>
+
+                <button onclick="bukaHalaman('tracking.html')">
+                    Tracking Pengiriman
+                </button>
+
+                <button onclick="bukaHalaman('laporan.html')">
+                    Laporan Pemesanan
+                </button>
+
+                <button onclick="bukaHalaman('transaksi.html')">
+                    History Transaksi
+                </button>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
