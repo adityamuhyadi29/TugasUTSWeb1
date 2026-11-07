@@ -14,3 +14,14 @@
 
 ![Gambar pengecekan Email](screenshot/ss3.png)
 
+### Halaman Dashboard
+
+1. Menampilkan informasi stok/katalok
+2. Tracing Pengiriman
+3. Laporan Pemesanan
+4. History Transaksi
+
+## Result
+
+![Gambar tampilan dashboard](screenshot/ss4.png)
+
