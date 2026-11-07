@@ -9,7 +9,7 @@
 
 /* Tampilan halaman */
 body {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #14213d, #243b64);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@ body {
 }
 
 /* Kotak login */
-body > div:first-child {
+.login-box {
     background: white;
     padding: 35px;
     width: 350px;
@@ -26,10 +26,22 @@ body > div:first-child {
     text-align: center;
 }
 
+/* Logo Toko Buku */
+.logo {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
 /* Judul */
 h2 {
     margin-bottom: 25px;
-    color: #333;
+    color: #14213d;
 }
 
 /* Input */
@@ -43,7 +55,7 @@ input {
 }
 
 input:focus {
-    border-color: #667eea;
+    border-color: #c49a36;
 }
 
 /* Tombol */
@@ -52,28 +64,32 @@ button {
     padding: 12px;
     border: none;
     border-radius: 7px;
-    background: #667eea;
+    background: #14213d;
     color: white;
     font-size: 16px;
     cursor: pointer;
 }
 
 button:hover {
-    background: #5365c7;
+    background: #c49a36;
 }
 
 /* Link Lupa Password dan Daftar */
-body > div:first-child div {
+.links {
     margin-top: 18px;
     display: flex;
     justify-content: space-between;
 }
 
 a {
-    color: #667eea;
+    color: #14213d;
     text-decoration: none;
     font-size: 13px;
     cursor: pointer;
+}
+
+a:hover {
+    color: #c49a36;
 }
 
 /* Modal Popup */
@@ -88,7 +104,7 @@ body > div.modal {
 }
 
 /* Isi Modal */
-.modal > div {
+.modal-content {
     background: white;
     padding: 30px;
     width: 350px;
@@ -107,7 +123,7 @@ p {
 }
 
 /* Tombol Close Modal */
-span {
+.close {
     position: absolute;
     top: 10px;
     right: 15px;
@@ -118,12 +134,12 @@ span {
 
 /* Responsive */
 @media (max-width: 400px) {
-    body > div:first-child {
+    .login-box {
         width: 90%;
         padding: 25px;
     }
 
-    .modal > div {
+    .modal-content {
         width: 100%;
     }
 }
