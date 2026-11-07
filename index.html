@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+
+    <!-- Menghubungkan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-box">
+        <h2>Login</h2>
+
+        <form id="loginForm">
+            <input type="email" id="email"
+                placeholder="Masukkan Email" required>
+
+            <input type="password" id="password"
+                placeholder="Masukkan Password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="links">
+            <a onclick="openModal('forgotModal')">
+                Lupa Password?
+            </a>
+
+            <a onclick="openModal('registerModal')">
+                Daftar
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal Lupa Password -->
+    <div class="modal" id="forgotModal">
+        <div class="modal-content">
+            <span class="close"
+                onclick="closeModal('forgotModal')">&times;</span>
+
+            <h3>Lupa Password</h3>
+            <p>Masukkan email untuk pemulihan password.</p>
+
+            <input type="email" placeholder="Masukkan Email">
+
+            <button type="button" onclick="alert('Fitur pemulihan password belum aktif.')">
+                Kirim
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal Daftar -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close"
+                onclick="closeModal('registerModal')">&times;</span>
+
+            <h3>Daftar Akun</h3>
+
+            <input type="text" placeholder="Nama Lengkap">
+
+            <input type="email" placeholder="Masukkan Email">
+
+            <input type="password" placeholder="Buat Password">
+
+            <button type="button" onclick="alert('Fitur pendaftaran belum aktif.')">
+                Daftar Sekarang
+            </button>
+        </div>
+    </div>
+
+    <!-- Menghubungkan JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

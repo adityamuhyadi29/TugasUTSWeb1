@@ -1,0 +1,129 @@
+
+/* Pengaturan seluruh elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Tampilan halaman */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Kotak login */
+body > div:first-child {
+    background: white;
+    padding: 35px;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Judul */
+h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+/* Tombol */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5365c7;
+}
+
+/* Link Lupa Password dan Daftar */
+body > div:first-child div {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* Modal Popup */
+body > div.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Isi Modal */
+.modal > div {
+    background: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* Tombol Close Modal */
+span {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    body > div:first-child {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .modal > div {
+        width: 100%;
+    }
+}
