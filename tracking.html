@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Pengiriman</title>
+    <link rel="stylesheet" href="css/tracking.css">
+</head>
+<body>
+
+    <header>
+        <h2>Informasi Pengiriman</h2>
+
+        <button onclick="bukaHalaman('dashboard.html')">
+            Kembali
+        </button>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Cek Status Pengiriman</h2>
+
+            <form id="formTracking">
+                <input
+                    type="text"
+                    id="nomorDO"
+                    placeholder="Masukkan Nomor Delivery Order"
+                    required
+                >
+
+                <button type="submit">Cari</button>
+            </form>
+        </section>
+
+        <section id="hasilTracking" style="display:none">
+    <h2>Detail Pengiriman</h2>
+    
+    <p>Nomor Delivery Order:
+        <strong id="hasilDO"></strong>
+    </p>
+
+    <p>Nama Pemesan:
+        <strong id="hasilNama"></strong>
+    </p>
+
+    <p>Ekspedisi:
+        <strong id="hasilEkspedisi"></strong>
+    </p>
+
+    <p>Tanggal Kirim:
+        <strong id="hasilTanggal"></strong>
+    </p>
+
+    <p>Jenis Paket:
+        <strong id="hasilPaket"></strong>
+    </p>
+
+    <p>Total Pembayaran:
+        <strong id="hasilTotal"></strong>
+    </p>
+
+    <h3>Status Pengiriman</h3>
+
+    <div id="statusPengiriman"></div>
+
+    <div class="progress">
+        <div id="progressBar"></div>
+    </div>
+
+    <p id="teksProgress"></p>
+
+    <h3>Riwayat Perjalanan Paket</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Waktu</th>
+                <th>Keterangan</th>
+            </tr>
+        </thead>
+
+        <tbody id="riwayatPerjalanan">
+        </tbody>
+    </table>
+</section>
+
+        <section id="pesanTidakDitemukan" style="display:none">
+            <h3>Data pengiriman tidak ditemukan!</h3>
+            <p>Periksa kembali nomor Delivery Order yang kamu masukkan.</p>
+        </section>
+
+    </main>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

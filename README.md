@@ -43,3 +43,12 @@
 
 ![Informasi pemesan dantotal harga](screenshot/ss7.png)
 
+### Tracking Pesanan
+
+1. Menampilkan semua informasi pesanan buku dan riwayat perjalanan paket buku
+
+## Result
+
+![Halaman Tracking](screenshot/ss8.png)
+
+![Informasi pesanan](screenshot/ss9.png)

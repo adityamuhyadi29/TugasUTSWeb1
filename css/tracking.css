@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    background-color: #667eea;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: white;
+    margin: 0;
+}
+
+header button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #667eea;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* MAIN */
+main {
+    padding: 30px 40px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* FORM PENCARIAN */
+form {
+    display: flex;
+    gap: 12px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5365c7;
+}
+
+/* DETAIL PENGIRIMAN */
+#hasilTracking p {
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+#hasilTracking strong {
+    color: #333;
+}
+
+/* GAMBAR BUKU */
+#daftarBukuTracking {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+#daftarBukuTracking div {
+    width: 180px;
+    padding: 15px;
+    background-color: #f4f6f9;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#daftarBukuTracking img {
+    width: 120px;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+#daftarBukuTracking h4 {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+#daftarBukuTracking p {
+    color: #666;
+}
+
+/* STATUS PENGIRIMAN */
+#statusPengiriman {
+    display: inline-block;
+    background-color: #e0e7ff;
+    color: #4355b5;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.progress {
+    width: 100%;
+    height: 18px;
+    background-color: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progressBar {
+    width: 0;
+    height: 100%;
+    background-color: #667eea;
+    border-radius: 20px;
+    transition: width 0.5s ease;
+}
+
+#teksProgress {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #667eea;
+}
+
+/* RIWAYAT PERJALANAN */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #667eea;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f6f9;
+}
+
+/* PESAN DATA TIDAK DITEMUKAN */
+#pesanTidakDitemukan h3 {
+    color: #dc3545;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#pesanTidakDitemukan p {
+    color: #666;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    header {
+        padding: 18px 20px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    section {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px;
+    }
+
+    #daftarBukuTracking {
+        justify-content: center;
+    }
+}

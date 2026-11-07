@@ -85,7 +85,7 @@ var dataTracking = {
                 keterangan: "Penerimaan di Loket: TANGERANG SELATAN. Pengirim: Universitas Terbuka"
             },
             {
-                waktu: "2025-08 25 14:07:56",
+                waktu: "2025-08-25 14:07:56",
                 keterangan: "Tiba di Hub: TANGERANG SELATAN"
             },
             {
